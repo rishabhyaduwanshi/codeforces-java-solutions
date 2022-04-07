@@ -1,0 +1,23 @@
+# cook your dish here
+t=int(input())
+
+for i in range(t):
+    n=int(input())
+    # for j in range(n):
+    #     x.append(int(input()))
+    # y=set(x)
+    # print(y)
+    array = [ int(x) for x in input().split()]
+    y=set(array)
+    z=len(y)
+    x=[z]*z
+    
+    while True:
+        z+=1
+        x.append(z)
+        if(z==n):
+            break
+    for j in list(x):
+        print(j)
+    
+        
